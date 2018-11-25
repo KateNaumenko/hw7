@@ -1,0 +1,45 @@
+.editor {
+  display: flex;
+  justify-content: center;
+  padding: 120px 0 60px;
+
+  .row {
+    margin: 0;
+
+    .btn-lg {
+      padding: 15px 65px;
+      margin-bottom: 20px;
+      border-radius: 30px;
+      border-color: $primary-color;
+      background-color: $primary-color;
+      font: 21px $secondary-font;
+    }
+  }
+
+  .under-btn {
+    color: #848e97;
+    font: 14px/1 $primary-font;
+  }
+}
+  
+.position {
+  position: relative;
+
+  .btn-block {
+    position: absolute;
+    top: -150px;
+  }
+
+  .editor-head {
+    color: #635c73;
+    text-transform: uppercase;
+  }
+
+  .editor-text {
+    margin: 55px 0 40px;
+    color: #5b5b5b;
+    font: 16px/2 $tertiary-font;
+  }
+}
+
+
