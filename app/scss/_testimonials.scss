@@ -3,13 +3,14 @@
   display: flex;
   justify-content: center;
   background: #4b3b4e url("../img/Layer_1.png") no-repeat center;
-  background-size: cover, auto;
+  background-size: inherit;
+  background-position-y: 15px;
 
   .row {
     padding-bottom: 50px;
     border-bottom: 1px solid #645766;
 
-    .headers {
+    .titles {
       color: #fff;
       line-height: 1.3;
     }

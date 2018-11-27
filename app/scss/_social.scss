@@ -43,6 +43,11 @@
   width: 400px;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(24%) sepia(7%) saturate(15%) hue-rotate(49deg) brightness(106%) contrast(90%);
+}
+
 .name {
   text-align: start;
 }

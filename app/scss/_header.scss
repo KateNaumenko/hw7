@@ -10,7 +10,7 @@ header {
   padding: 30px 10px;
 }
 
-.header-logo-span {
+.company-logo-span {
   color: #8d81ac;
 }
 
@@ -72,6 +72,8 @@ header {
 
 .navbar-light {
   .navbar-brand {
+    display: flex;
+    align-items: center;
     font-size: 24px;
   }
 }

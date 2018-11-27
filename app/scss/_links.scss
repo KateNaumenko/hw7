@@ -1,0 +1,48 @@
+.links {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+
+  .row {
+    text-align: start;
+
+    .links-wrapper {
+      padding: 0 25px;
+
+      .btn {
+        margin-bottom: 60px;
+        padding: 10px 10px 10px 25px;
+        background-color: #f4f4f4;
+        color: $primary-color;
+        font: 600 14px $primary-font;
+      }
+
+      .btn-blog {
+        margin-bottom: 0;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.links-title {
+  margin-bottom: 40px;
+  color: #d3d1da;
+  font: 28px/1 $secondary-font;
+}
+
+.first-group-subtitles {
+  color: #323232;
+  font: 600 16px/1.5 $primary-font;
+}
+
+.second-group-subtitles {
+  color: $primary-color;
+  font: 600 16px/1.5 $primary-font;
+}
+
+.links-text {
+  margin: 20px 0 35px;
+  color: #848e97;
+  font: 600 13px/1.5 $primary-font;
+}

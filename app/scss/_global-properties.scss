@@ -1,10 +1,12 @@
 .row {
-  width: 450px;
+  min-width: 450px;
+  max-width: 100%;
+  padding: 15px;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-.headers {
+.titles {
   font: 48px/1 $secondary-font;
 }
