@@ -36,7 +36,7 @@
 
 .code-img {
   position: relative;
-  bottom: -60px;
+  bottom: -120px;
   max-width: calc(100% + 15px);
   margin-left: 15px;
   width: 1140px;
@@ -48,5 +48,11 @@
 
   &:hover {
     box-shadow: 0 0 35px 10px #ccc;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .feature-text {
+    font-family: $primary-font;
   }
 }

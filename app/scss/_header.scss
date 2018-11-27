@@ -30,6 +30,7 @@ header {
 
   .navbar-toggler {
     border: none;
+    outline: none;
   }
   .navbar-nav {
     .row {
@@ -38,7 +39,12 @@ header {
     }
 
     .nav-link {
-      padding-left: 15px;
+      padding: 15px 30px;
+      color: #fff;
+
+      //&:visited {
+      //  color: #6f6f6f;
+      //}
 
       &:hover {
         color: $primary-color;
@@ -46,10 +52,11 @@ header {
 
       &:active {
         border-left: 8px solid $primary-color;
+        color: $primary-color;
       }
-
-      &:visited {
-        color: #6f6f6f;
+      .social-icon {
+        text-align: center;
+        border-left: none;
       }
     }
   }
@@ -57,7 +64,7 @@ header {
 
 
 .nav-item {
-  margin: 0 -15px;
+  margin: 0 -16px;
   background-color: #333333;
   color: #fff;
 }
@@ -78,14 +85,22 @@ header {
   }
 }
 
-
-
 .navbar-toggler>.close {
   display:inline;
 
 }
-.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-icon {
+.navbar-toggler.collapsed>.close,
+.navbar-toggler:not(.collapsed)>.navbar-icon {
   display:none;
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 110px;
+}
+
+.collapse {
+  width: 100%;
 }
 
 .fab {
@@ -98,6 +113,8 @@ header {
   }
 }
 
-.social-icon {
+.nav-link:active .social-icon {
   text-align: center;
+  border-left: none;
 }
+

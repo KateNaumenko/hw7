@@ -11,6 +11,8 @@
 }
 
 .testimonial {
+  display: flex;
+  justify-content: center;
   margin: 40px 0 25px;
   font: 400 17px $tertiary-font;
 
@@ -35,7 +37,7 @@
 }
 
 .time {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #848e97;
 }
 
@@ -95,10 +97,45 @@
 }
 
 .social-btn-wrap {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 .followers {
   color: #848e97;
   font: 600 14px $primary-font;
 }
+
+@media only screen and (min-width: 960px) {
+  .social .btn-block {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social-btn {
+    width: 240px;
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonial {
+    font: 20px/1.5 $tertiary-font;
+  }
+
+ .comment-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+//@media only screen and (min-width: 960px) {
+//
+//}
+//
+//@media only screen and (min-width: 960px) {
+//
+//}
