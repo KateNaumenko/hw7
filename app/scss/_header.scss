@@ -42,10 +42,6 @@ header {
       padding: 15px 30px;
       color: #fff;
 
-      //&:visited {
-      //  color: #6f6f6f;
-      //}
-
       &:hover {
         color: $primary-color;
       }
@@ -54,15 +50,14 @@ header {
         border-left: 8px solid $primary-color;
         color: $primary-color;
       }
-      .social-icon {
-        text-align: center;
-        border-left: none;
-      }
     }
   }
 }
 
-
+.navbar-light .navbar-nav .nav-link:active.social-icon {
+  border: 0;
+  text-align: center;
+}
 .nav-item {
   margin: 0 -16px;
   background-color: #333333;
@@ -113,8 +108,39 @@ header {
   }
 }
 
-.nav-link:active .social-icon {
-  text-align: center;
-  border-left: none;
+@media only screen and (min-width: 768px) {
+  .navbar-light {
+    .collapse {
+      position: relative;
+      top: 0;
+      justify-content: flex-end;
+    }
+    .navbar-nav {
+      .nav-item {
+        margin: 16px;
+        background-color: transparent;
+        font: 16px/1 $secondary-font;
+
+        .nav-link {
+          padding: 0;
+          color: $primary-color;
+
+          &:hover {
+            color: #635c73;
+          }
+
+          &:active {
+            border:0;
+          }
+        }
+      }
+      
+      .nav-item.row {
+        display: none;
+      }
+    }
+  }
+
 }
+
 

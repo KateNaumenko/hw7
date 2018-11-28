@@ -19,6 +19,14 @@
 
 .company-testimonial {
   margin: 30px 0;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  .testimonials-brand {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .comment {
@@ -34,7 +42,7 @@
     background-position-y: bottom;
 
     .row {
-      align-items: flex-end;
+      align-items: baseline;
     }
   }
 }
