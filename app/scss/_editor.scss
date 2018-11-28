@@ -12,13 +12,13 @@
       border-radius: 30px;
       border-color: $primary-color;
       background-color: $primary-color;
-      font: 21px $secondary-font;
+      font: $fourth-seniority-font-size $secondary-font;
     }
   }
 
   .under-btn {
-    color: #848e97;
-    font: 14px/1 $primary-font;
+    color: $tertiary-color;
+    font: 400 $primary-font-size $primary-font;
   }
 }
   
@@ -38,13 +38,13 @@
   .editor-text {
     margin: 55px 0 40px;
     color: #5b5b5b;
-    font: 16px/2 $tertiary-font;
+    font: #{$secondary-font-size}/$secondary-line-height $tertiary-font;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .position .editor-text {
     color: #323232;
-    font-size: 21px;
+    font-size: $fourth-seniority-font-size;
   }
 }

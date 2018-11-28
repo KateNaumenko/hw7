@@ -8,7 +8,7 @@
 
   .titles {
     margin-bottom: 50px;
-    color: #fff;
+    color: $secondary-color;
   }
 
   .cards {
@@ -19,7 +19,7 @@
     padding: 0;
     margin-top: 40px;
     color: #a095a0;
-    font: 600 14px/1.5 $primary-font;
+    font: #{$primary-font-size}/$primary-line-height $primary-font;
   }
 }
 
@@ -29,12 +29,12 @@
   height: 460px;
   background-color: rgba(212, 212, 212, 0.1);
   border-radius: 0;
-  font: 600 14px $primary-font;
-  color: #fff;
+  font: $primary-font-size $primary-font;
+  color: $secondary-color;
 
   .card-header {
     padding: 40px 0;
-    font-size: 24px;
+    font-size: $tertiary-font-size;
   }
 
   .btn {
@@ -57,8 +57,8 @@
 .card-title {
   position: relative;
   margin-bottom: 0;
-  color: #fff;
-  font: 60px/1.5 $secondary-font;
+  color: $secondary-color;
+  font: #{60px}/$primary-line-height $secondary-font;
 }
 
 .term {
@@ -78,7 +78,7 @@
 .license {
   padding-top: 60px;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: $primary-line-height;
   white-space: pre-line;
 }
 

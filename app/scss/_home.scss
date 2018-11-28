@@ -1,33 +1,32 @@
-.home-title {
-  width: 100%;
-  font-family: $primary-font;
-}
-
-.largest-title {
-  margin: 10px 0;
-  color: #fff;
-  font: 82px/1 $secondary-font;
-}
-
-.smaller-title {
-  margin: 10px 0;
-  color: $primary-color;
-  font-size: 24px;
-}
-
-.smallest-title {
-  padding-bottom: 480px;
-  margin: 10px 0;
-  color: #848e97;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-
 .home {
   justify-content: center;
   display: flex;
   padding-top: 75px;
   background: url("../img/bg-img.png") center;
   background-size: cover;
+
+  .home-title {
+    width: 100%;
+    font-family: $primary-font;
+  }
+
+  .largest-title {
+    margin: 10px 0;
+    color: $secondary-color;
+    font: 82px $secondary-font;
+  }
+
+  .smaller-title {
+    margin: 10px 0;
+    color: $primary-color;
+    font-size: $tertiary-font-size;
+  }
+
+  .smallest-title {
+    padding-bottom: 480px;
+    margin: 10px 0;
+    color: $tertiary-color;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
 }

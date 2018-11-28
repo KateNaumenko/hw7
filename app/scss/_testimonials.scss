@@ -11,7 +11,7 @@
     border-bottom: 1px solid #645766;
 
     .titles {
-      color: #fff;
+      color: $secondary-color;
       line-height: 1.3;
     }
   }
@@ -32,8 +32,8 @@
 .comment {
   max-width: 330px;
   padding-top: 20px;
-  color: #fff;
-  font: 16px/1.5 $fourth-seniority-font;
+  color: $secondary-color;
+  font: #{$secondary-font-size}/$primary-line-height $fourth-seniority-font;
 }
 
 @media only screen and (min-width: 960px) {

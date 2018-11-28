@@ -2,16 +2,8 @@ header {
   .navbar {
     padding-top: 0;
     padding-bottom: 0;
-    font: 600 32px/2 $primary-font;
+    font: #{32px}/$secondary-line-height $primary-font;
   }
-}
-
-.header-logo{
-  padding: 30px 10px;
-}
-
-.company-logo-span {
-  color: #8d81ac;
 }
 
 .nav-item {
@@ -33,22 +25,29 @@ header {
     outline: none;
   }
   .navbar-nav {
+
     .row {
-      width: 480px;
+      min-width: 480px;
       justify-content: start;
     }
 
-    .nav-link {
-      padding: 15px 30px;
-      color: #fff;
+    .nav-item {
+      margin: 0 -16px;
+      background-color: #333333;
+      color: $secondary-color;
 
-      &:hover {
-        color: $primary-color;
-      }
+      .nav-link {
+        padding: 15px 30px;
+        color: $secondary-color;
 
-      &:active {
-        border-left: 8px solid $primary-color;
-        color: $primary-color;
+        &:hover {
+          color: $primary-color;
+        }
+
+        &:active {
+          border-left: 8px solid $primary-color;
+          color: $primary-color;
+        }
       }
     }
   }
@@ -58,25 +57,33 @@ header {
   border: 0;
   text-align: center;
 }
-.nav-item {
-  margin: 0 -16px;
-  background-color: #333333;
-  color: #fff;
-}
-
-.navbar-light .btn-sm {
-  padding: 10px 35px;
-  border-radius: 25px;
-  border-color: $primary-color;
-  background-color: $primary-color;
-  font: 17px/1.5 $secondary-font;
-}
 
 .navbar-light {
+  .btn-sm {
+    padding: 10px 35px;
+    border-radius: 25px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    font: #{17px}/$primary-line-height $secondary-font;
+  }
+
   .navbar-brand {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: $tertiary-font-size;
+
+    .header-logo{
+      padding: 30px 10px;
+    }
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 110px;
+  }
+
+  .collapse {
+    width: 100%;
   }
 }
 
@@ -89,17 +96,8 @@ header {
   display:none;
 }
 
-.navbar-collapse {
-  position: absolute;
-  top: 110px;
-}
-
-.collapse {
-  width: 100%;
-}
-
 .fab {
-  color: #fff;
+  color: $secondary-color;
   font-size: 50px;
   text-align: center;
 
@@ -110,16 +108,21 @@ header {
 
 @media only screen and (min-width: 768px) {
   .navbar-light {
+
     .collapse {
       position: relative;
       top: 0;
+      right: 20px;
       justify-content: flex-end;
     }
+
     .navbar-nav {
+
       .nav-item {
-        margin: 16px;
+        margin: 25px;
         background-color: transparent;
-        font: 16px/1 $secondary-font;
+        font: $secondary-font-size $secondary-font;
+        border: 0;
 
         .nav-link {
           padding: 0;
@@ -135,7 +138,9 @@ header {
         }
       }
       
-      .nav-item.row {
+      .nav-item.row,
+      .nav-item:first-child,
+      .nav-item:nth-last-child(2) {
         display: none;
       }
     }

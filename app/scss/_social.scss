@@ -2,12 +2,20 @@
   padding: 120px 0 60px;
   justify-content: center;
   display: flex;
+
+  .carousel-inner {
+    min-width: 400px;
+  }
 }
 
 .user {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .userpic {
+    margin-right: 25px;
+  }
 }
 
 .testimonial {
@@ -22,28 +30,24 @@
   }
 }
 
-.userpic {
-  margin-right: 25px;
-}
+.name {
+  text-align: start;
 
-.user-name {
-  color: #474747;
-  font: 24px/2 $secondary-font;
+  .user-name {
+    color: #474747;
+    font: #{$tertiary-font-size}/$secondary-line-height $secondary-font;
+  }
 }
 
 .nickname,
 .time{
   color: $primary-color;
-  font: 600 16px $primary-font;
+  font: $secondary-font-size $primary-font;
 }
 
 .time {
   margin-bottom: 30px;
-  color: #848e97;
-}
-
-.carousel-inner {
-  min-width: 400px;
+  color: $tertiary-color;
 }
 
 .carousel-control-prev,
@@ -51,28 +55,29 @@
   filter: invert(24%) sepia(7%) saturate(15%) hue-rotate(49deg) brightness(106%) contrast(90%);
 }
 
-.name {
-  text-align: start;
+.social-btn-wrap {
+  margin: 30px 0;
+
+  .social-btn {
+    position: relative;
+    margin-bottom: 20px;
+    width: 280px;
+    height: 50px;
+    font: #{$fourth-seniority-font-size}/$primary-line-height $primary-font;
+
+    .fa-social {
+      position: absolute;
+      left: 25px;
+      top: 15px;
+      font-size: 20px;
+    }
+  }
 }
 
-.social-btn {
-  position: relative;
-  margin-bottom: 20px;
-  width: 280px;
-  height: 50px;
-  font: 600 21px/1.5 $primary-font;
-}
 
 .github-btn {
   background-color: #f3f3f3;
   color: #000;
-}
-
-.fa-social {
-  position: absolute;
-  left: 25px;
-  top: 15px;
-  font-size: 20px;
 }
 
 .fa-social.fa-github {
@@ -81,29 +86,22 @@
 
 .twitter-btn {
   background-color: #26a6d1;
-  color: #d4d4d4;
-}
-
-.fa-social.fa-twitter {
-  color: #d4d4d4;
+  color: $secondary-color;
 }
 
 .facebook-btn {
   background-color: #3b5998;
-  color: #fff;
+  color: $secondary-color;
 }
 
-.fa-social.fa-facebook-f {
-  color: #fff;
-}
-
-.social-btn-wrap {
-  margin: 30px 0;
+.fa-social.fa-facebook-f,
+.fa-social.fa-twitter {
+  color: $secondary-color;
 }
 
 .followers {
-  color: #848e97;
-  font: 600 14px $primary-font;
+  color: $tertiary-color;
+  font: $primary-font-size $primary-font;
 }
 
 @media only screen and (min-width: 960px) {
@@ -123,21 +121,6 @@
   }
 
   .testimonial {
-    font: 20px/1.5 $tertiary-font;
+    font: #{20px}/$primary-line-height $tertiary-font;
   }
-
-  .carousel-control-next-icon,
-  .carousel-control-prev-icon{
-    position: relative;
-    top: 35px;
-  }
-
 }
-
-//@media only screen and (min-width: 960px) {
-//
-//}
-//
-//@media only screen and (min-width: 960px) {
-//
-//}

@@ -11,7 +11,7 @@
 
     .subscribe-title {
       color: #323232;
-      font: 30px/2 $secondary-font;
+      font: #{30px}/$secondary-line-height $secondary-font;
     }
   }
 }
@@ -31,7 +31,7 @@
 
     &::placeholder {
       color: #c8cbcf;
-      font: 600 14px/1.5 $primary-font;
+      font: #{$primary-font-size}/$primary-line-height $primary-font;
     }
 
   }
@@ -42,7 +42,7 @@
     background-color: $primary-color;
     border: 1px solid $primary-color;
     border-radius: 25px;
-    color: #fff;
-    font: 600 13px/1.5 $primary-font;
+    color: $secondary-color;
+    font: #{13px}/$primary-line-height $primary-font;
   }
 }

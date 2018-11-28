@@ -8,10 +8,6 @@
     justify-content: start;
     text-align: start;
     border-top: 1px solid #c7c7c7;
-    //
-    //.footer-logo {
-    //  //border-top: 1px solid #c7c7c7;
-    //}
 
     .nav {
       text-align: start;
@@ -22,7 +18,7 @@
 
       .nav-link {
         color: $primary-color;
-        font: 600 15px/1.5 $primary-font;
+        font: #{15px}/$primary-line-height $primary-font;
       }
     }
   }
@@ -33,7 +29,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  font: 600 24px $primary-font;
+  font: $tertiary-font-size $primary-font;
 
 }
 .footer-text,
@@ -43,8 +39,8 @@
 
 .footer-text {
   margin: 20px 0 40px;
-  color: #848e97;
-  font: 600 14px/1.5 $primary-font
+  color: $tertiary-color;
+  font: #{$primary-font-size}/$primary-line-height $primary-font
 }
 
 .address,
@@ -54,13 +50,13 @@
 
 .phone-number {
   color: #31384d;
-  font: 30px/1 $secondary-font;
+  font: 30px $secondary-font;
 }
 
 .mode {
   margin-bottom: 40px;
-  color: #848e97;
-  font: 600 12px/2.5 $primary-font;
+  color: $tertiary-color;
+  font: 12px/2.5 $primary-font;
 }
 
 @media only screen and (min-width: 960px) {

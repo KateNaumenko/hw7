@@ -14,7 +14,7 @@
         padding: 10px 10px 10px 25px;
         background-color: #f4f4f4;
         color: $primary-color;
-        font: 600 14px $primary-font;
+        font: $primary-font-size $primary-font;
       }
 
       .btn-blog {
@@ -28,21 +28,11 @@
 .links-title {
   margin-bottom: 40px;
   color: #d3d1da;
-  font: 28px/1 $secondary-font;
-}
-
-.first-group-subtitles {
-  color: #323232;
-  font: 600 16px/1.5 $primary-font;
-}
-
-.second-group-subtitles {
-  color: $primary-color;
-  font: 600 16px/1.5 $primary-font;
+  font: 28px $secondary-font;
 }
 
 .links-text {
   margin: 20px 0 35px;
-  color: #848e97;
-  font: 600 13px/1.5 $primary-font;
+  color: $tertiary-color;
+  font: #{13px}/$primary-line-height $primary-font;
 }

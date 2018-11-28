@@ -7,10 +7,24 @@
   text-align: center;
 }
 
+.company-logo-span {
+  color: $primary-color;
+}
+
 .titles {
-  font: 48px/1 $secondary-font;
+  font: 48px $secondary-font;
 }
 
 .btn:hover {
   box-shadow: 0 0 35px 10px $primary-color;
+}
+
+.first-group-subtitles {
+  color: #323232;
+  font: #{$secondary-font-size}/$primary-line-height $primary-font;
+}
+
+.second-group-subtitles {
+  color: $primary-color;
+  font: #{$secondary-font-size}/$primary-line-height $primary-font;
 }
