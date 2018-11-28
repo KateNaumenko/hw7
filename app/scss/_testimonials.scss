@@ -27,3 +27,14 @@
   color: #fff;
   font: 16px/1.5 $fourth-seniority-font;
 }
+
+@media only screen and (min-width: 960px) {
+  .testimonials {
+    background-size: cover;
+    background-position-y: bottom;
+
+    .row {
+      align-items: flex-end;
+    }
+  }
+}

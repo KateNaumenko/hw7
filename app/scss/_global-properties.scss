@@ -10,3 +10,7 @@
 .titles {
   font: 48px/1 $secondary-font;
 }
+
+.btn:hover {
+  box-shadow: 0 0 35px 10px $primary-color;
+}

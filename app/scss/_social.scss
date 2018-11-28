@@ -42,7 +42,7 @@
 }
 
 .carousel-inner {
-  width: 400px;
+  min-width: 400px;
 }
 
 .carousel-control-prev,
@@ -125,11 +125,12 @@
     font: 20px/1.5 $tertiary-font;
   }
 
- .comment-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon{
+    position: relative;
+    top: 35px;
   }
+
 }
 
 //@media only screen and (min-width: 960px) {

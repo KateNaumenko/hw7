@@ -2,11 +2,17 @@
   display: flex;
   justify-content: center;
   padding: 35px 0 20px;
-  background-color: #f4f4f4;;
+  background-color: #f4f4f4;
 
-  .subscribe-title {
-    color: #323232;
-    font: 30px/2 $secondary-font;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .subscribe-title {
+      color: #323232;
+      font: 30px/2 $secondary-font;
+    }
   }
 }
 

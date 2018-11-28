@@ -82,6 +82,10 @@ table {
 .titles {
   font: 48px/1 "Montserrat-Bold", "Helvetica", sans-serif; }
 
+.btn:hover {
+  -webkit-box-shadow: 0 0 35px 10px #8d81ac;
+          box-shadow: 0 0 35px 10px #8d81ac; }
+
 header .navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -312,7 +316,12 @@ header .navbar {
 
 @media only screen and (min-width: 960px) {
   .feature-text {
-    font-family: "Montserrat-Regular", "Helvetica", sans-serif; } }
+    font-family: "Montserrat-Regular", "Helvetica", sans-serif; }
+  .code-img {
+    bottom: -70px; }
+  .d-lg-block {
+    margin-top: 20px;
+    text-align: start; } }
 
 .social {
   padding: 120px 0 60px;
@@ -370,7 +379,7 @@ header .navbar {
   color: #848e97; }
 
 .carousel-inner {
-  width: 400px; }
+  min-width: 400px; }
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -447,15 +456,10 @@ header .navbar {
             align-items: center; }
   .testimonial {
     font: 20px/1.5 "SSP-Regular", "Helvetica", sans-serif; }
-  .carousel-item .comment-wrap {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    position: relative;
+    top: 35px; } }
 
 .testimonials {
   padding: 80px 0 50px;
@@ -486,6 +490,17 @@ header .navbar {
   padding-top: 20px;
   color: #fff;
   font: 16px/1.5 "SSP-Bold-Italic", "Helvetica", sans-serif; }
+
+@media only screen and (min-width: 960px) {
+  .testimonials {
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position-y: bottom; }
+    .testimonials .row {
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end; } }
 
 .prices {
   padding: 15px 0 40px;
@@ -582,9 +597,22 @@ header .navbar {
           justify-content: center;
   padding: 35px 0 20px;
   background-color: #f4f4f4; }
-  .subscribe .subscribe-title {
-    color: #323232;
-    font: 30px/2 "Montserrat-Bold", "Helvetica", sans-serif; }
+  .subscribe .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .subscribe .row .subscribe-title {
+      color: #323232;
+      font: 30px/2 "Montserrat-Bold", "Helvetica", sans-serif; }
 
 .form-inline {
   margin: 30px 0;
@@ -710,6 +738,10 @@ header .navbar {
   -webkit-justify-content: start;
       -ms-flex-pack: start;
           justify-content: start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font: 600 24px "Montserrat-Regular", "Helvetica", sans-serif; }
 
 .footer-text,
@@ -733,3 +765,20 @@ header .navbar {
   margin-bottom: 40px;
   color: #848e97;
   font: 600 12px/2.5 "Montserrat-Regular", "Helvetica", sans-serif; }
+
+@media only screen and (min-width: 960px) {
+  .bottom .row {
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+    .bottom .row .footer-logo,
+    .bottom .row .address,
+    .bottom .row .info {
+      margin: 0; }
+    .bottom .row .nav {
+      top: -10px; }
+      .bottom .row .nav .navbar-brand {
+        margin: 0; }
+  .logo {
+    padding-top: 60px; } }
